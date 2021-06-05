@@ -1,0 +1,31 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: montserrat;
+}
+body{
+    background-color: #222222;
+}
+.quizarea{
+    width: 50%;
+    margin: auto;
+}
+.quiz_jumbotron{
+    display: none;
+    height: 430px;
+}
+.choices{
+    float: left;
+}
+.choices button{
+    width: 300px;
+    margin-left: 45px;
+    margin-top: 20px;
+    height: 50px;
+}
+.choices button:hover{
+    background-color: #2B4764;
+}
+#question{
+    font-size: 20px;
+}

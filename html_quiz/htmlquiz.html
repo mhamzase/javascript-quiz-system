@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Quiz Exam</title>
+    
+    <!-- bootswatch bootstrap -->
+    <link rel="stylesheet" href="https://bootswatch.com/4/darkly/bootstrap.min.css">
+
+    <!-- Icons Fontawesome -->
+    <script src="https://kit.fontawesome.com/28a02cc159.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="/css/global.css">
+</head>
+<body>
+    <a href="/index.html" class="btn btn-success btn-lg ml-5 mt-5"> <i class="fas fa-home p-2 pl-5 pr-5"></i> </a>
+    <div class="container-fluid">
+        <!-- heading -->
+        <div class="heading">
+            <h1 class="display-4 text-center mt-4"> HTML QUIZ </h1>
+        </div>
+
+        <div class="quizarea mt-5">
+            <div class="jumbotron message_jumbotron">
+                <p class="lead">
+                    <span class="text-warning font-weight-bold">NOTE!</span><br>
+                    Before start to take Quiz<br> 
+                    You must have some basic knowledge about <span class="font-weight-bold text-info">HTML</span> 
+                </p>
+                <hr class="my-4">
+              
+                    <button  id="startquiz" name="starthtml" class="btn btn-primary btn-lg" >Start Quiz</button>
+               
+            </div>
+            <div class="jumbotron quiz_jumbotron mt-5">
+                
+                <!-- showing time left to atempt the quiz -->
+                <p class="text-center text-warning" id="time_left">Time Left : 30 s</p>
+
+                <!-- showing here question no count progress -->
+                <p class="text-right text-info font-weight-bold" id="question_progress">Question x of y</p>
+                
+                <!-- showing here the currect question -->
+                <p class="text- text-left" id="question"></p>
+
+                
+                <!-- showing here the currec question choices -->
+                <div class="choices row mb-5">
+                    <button class="btn btn-light" id="b1"><span id="btext1">button1</span></button>
+                    <button class="btn btn-light" id="b2"><span id="btext2">button2</span></button>
+                    <button class="btn btn-light" id="b3"><span id="btext3">button3</span></button>
+                    <button class="btn btn-light" id="b4"><span id="btext4">button4</span></button>
+                </div>
+
+                <!-- showing the progress of correct or wrong answers -->
+                <div class="text-center">
+                    <span id="correctCount" class="text-success mr-3">Correct Answers (0)</span>
+                    <span id="wrongCount" class="text-danger ml-3">Wrong Answers (0)</span>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <script src="htmlquiz.js"></script>
+</body>
+</html>
